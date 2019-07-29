@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.card_box {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 #e5e8ec;
+    box-shadow: 0 1px 1px 0 #e5e8ec;
+}
+
+.card_box .card_contents {
+    margin-bottom: 11px;
+    position: relative;
+    background-color: #fff;
+}
+
+.card_box .postwriter {
+    position: relative;
+    height: 65px;
+    background-color: transparent;
+    z-index: 11;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.card_box .postwriter .post_func {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card_box .postwriter .post_func .post_set {
+    overflow: hidden;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    background: 0 0;
+    border: 0;
+}
+
+.card_box .postwriter .post_func .post_set::before {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background: #333;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    box-shadow: 0 7px 0 #333,
+        0 14px 0 #333;
+    -webkit-box-shadow: 0 7px 0 #333,
+        0 14px 0 #333;
+    -moz-box-shadow: 0 7px 0 #333,
+        0 14px 0 #333;
+}
+
+.card_box .profile {
+    z-index: 12;
+    display: block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.card_box .profileinner {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 50%;
+    font-size: 0;
+}
+
+.card_box .profileinner img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.card_box .postWriterinfoWrap {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 396px;
+    -ms-flex: 1 1 396px;
+    flex: 1 1 396px;
+    position: relative;
+    min-width: 0;
+    white-space: nowrap;
+    color: #999;
+    line-height: 1.4;
+    z-index: 12;
+}
+
+.card_box .postWriterinfoWrap .name {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #333;
+    margin-top: 3px;
+}
+
+.card_box .postWriterinfoWrap .postListinfoWrap {
+    padding-top: 2px;
+    font-size: 0;
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    word-break: normal;
+    word-wrap: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.card_box .postWriterinfoWrap .postListinfoWrap .time {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+}
+
+.card_box .postmain {
+    position: relative;
+    display: block;
+}
+
+.card_box .postmain .postbody {
+    padding: 10px;
+}
+
+.card_box .postmain .post_contents {
+    padding-top: 8px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.card_box .postmain .post_contents .content {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 1.4em;
+    line-height: 1.43;
+}
+
+/* 댓글영역 */
+.card_box .post_comment_count {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.card_box .post_comment_count .post_comment_btn_box {
+    position: relative;
+    float: left;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+}
+
+.card_box .post_comment_count .post_comment_btn_box .post_comment_btn {
+    display: inline-block;
+    line-height: 23px;
+    vertical-align: top;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+    border: none;
+}
+
+.card_box .post_comment_count .post_comment_btn_box .post_comment_btn .count {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 1.2em;
+    line-height: 24px;
+    vertical-align: top;
+    font-weight: 500;
+}

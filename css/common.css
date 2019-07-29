@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* Common */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-size: 10px
+}
+
+img,
+fieldset {
+    border: 0
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+em,
+address {
+    font-style: normal
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: underline
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+dd,
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.disable {
+    display: none !important;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e6e3e3;
+}
+
+.lebone {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.lebone div {
+    float: left;
+}
+
+.gold {
+    width: 50px;
+    height: 38px;
+    box-sizing: content-box;
+    position: relative;
+    background: gold;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px 5px;
+}
+
+.gold:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.silver {
+    width: 50px;
+    height: 30px;
+    box-sizing: content-box;
+    position: relative;
+    background: silver;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.silver:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.copper {
+    width: 50px;
+    height: 30px;
+    box-sizing: content-box;
+    position: relative;
+    background: rgb(220, 181, 148);
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.copper:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid #fff;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.calorie_text_orange {
+    color: orange;
+}
+
+.calorie_text_rad {
+    color: #af3a0b;
+}
+
+.text_pink2 {
+    color: #E95468;
+}
+
+.text_green2 {
+    color: #26ce09 !important;
+}
+
+.additive_bgc_gray {
+    background-color: rgb(155, 155, 155);
+}
+
+.additive_bgc_darkred {
+    background-color: rgb(99, 27, 28);
+}
+
+.additive_bgc_red {
+    background-color: rgb(216, 0, 23);
+}
+
+.additive_bgc_yellow {
+    background-color: rgb(249, 164, 39);
+}
+
+.additive_bgc_green {
+    background-color: rgb(149, 206, 99);
+}
+
+.fa-hubspot,
+.fa-utensils,
+.fa-chart-pie {
+    color: #ababab;
+    margin-right: 4px;
+}
+
+.nutrient_table_bgc_red {
+    background-color: #ecd7de;
+}
+
+.nutrient_table_bgc_gray {
+    background-color: #e6e3e3;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+@-webkit-keyframes bouncy {
+
+    from,
+    to {
+        -webkit-transform: scale(1, 1);
+    }
+
+    25% {
+        -webkit-transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        -webkit-transform: scale(0.95, 1.05);
+    }
+}
+
+@keyframes bouncy {
+
+    from,
+    to {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
