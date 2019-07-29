@@ -218,12 +218,16 @@
     max-width: 100%;
     text-align: left;
     flex-direction: column;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box .comment_reply {
     display: flex;
     flex-direction: row;
+}
+
+.card_box .comment_list_box .comment_list_view .reply:last-child {
+    padding-bottom: 31px;
 }
 
 .card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box {
