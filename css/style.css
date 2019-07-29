@@ -136,7 +136,7 @@
 }
 
 .card_box .postmain .postbody {
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .card_box .postmain .post_contents {
@@ -161,16 +161,15 @@
 .card_box .post_comment_count .post_comment_btn_box {
     position: relative;
     float: left;
-    font-size: 13px;
+    font-size: 1.2em;
     font-weight: 400;
     color: #333;
 }
 
 .card_box .post_comment_count .post_comment_btn_box .post_comment_btn {
     display: inline-block;
-    line-height: 23px;
     vertical-align: top;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
     color: #333;
     background-color: #fff;
@@ -181,7 +180,75 @@
     display: inline-block;
     margin-left: 3px;
     font-size: 1.2em;
-    line-height: 24px;
     vertical-align: top;
     font-weight: 500;
+}
+
+.card_box .post_comment_count .post_comment_btn_box .comment_arrow {
+    font-size: 1.2em;
+    border: 1px solid #b9b8b8;
+    display: inline-block;
+    height: 16px;
+    line-height: 13px;
+    padding: 0px 2px;
+    vertical-align: middle;
+}
+
+.card_box .comment_list_box .comment_list_view {
+    position: relative;
+    text-align: left;
+    background: #fcfcfc;
+}
+
+.card_box .comment_list_box .comment_list_view .comment_list_contents_box {
+    border-top: 1px solid #f0f0f0;
+    padding: 10px;
+    display: flex;
+    max-width: 100%;
+    text-align: left;
+}
+
+.card_box .comment_list_box .comment_list_view .profile {
+    margin-right: 10px;
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap .name {
+    flex: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap {
+    line-height: 1;
+    white-space: inherit;
+
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap .comment_list_content {
+    color: #222;
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap .comment_list_content p {
+    padding-top: 1px;
+    white-space: pre-wrap;
+    line-height: 1.4;
+    max-height: 100%;
+    word-wrap: break-word;
+    font-size: 1.3em;
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap .comment_list_content .time {
+    position: relative;
+    vertical-align: top;
+    margin-top: 3px;
+    display: inline-block;
+    line-height: 15px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #777;
 }
