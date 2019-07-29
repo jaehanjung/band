@@ -218,6 +218,7 @@
     max-width: 100%;
     text-align: left;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box .comment_reply {
@@ -310,30 +311,37 @@
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
+    background: #989c9a;
+    color: #fff;
 }
 
-.reply_page .comment_list_box .reply_input {
-    position: absolute;
+.reply_page .reply_input {
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
+    border-top: 1px solid #989c9a;
+    padding: 5px 10px;
+    background-color: #fff;
 }
 
-.reply_page .comment_list_box .reply_input input {
+.reply_page .reply_input input {
     width: 88%;
-    height: 40px;
+    font-size: 1.4em;
+    border: none;
 }
 
-.reply_page .comment_list_box .reply_input .reply_input_btn {
-    background: #03c75a;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+.reply_page .reply_input .reply_input_btn {
+    background: #989c9a;
+    border: 1px solid #989c9a;
     color: #fff;
     font-size: 1.4em;
     font-weight: bold;
     text-align: center;
     width: 12%;
+    height: 30px;
 }
