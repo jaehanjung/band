@@ -213,7 +213,7 @@
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box {
     border-top: 1px solid #f0f0f0;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     display: flex;
     max-width: 100%;
     text-align: left;
@@ -226,13 +226,15 @@
     flex-direction: row;
 }
 
-.card_box.reply_page .comment_list_box .comment_list_view .reply:last-child {
-    padding-bottom: 31px;
-}
+
 
 .card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box {
-    padding: 10px 10px;
+    padding: 10px 10px 0px 10px;
     margin-top: 10px;
+}
+
+.card_box.reply_page .comment_list_box .comment_list_view .reply .comment_list_contents_box {
+    padding: 10px 10px 0px 10px;
 }
 
 .card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box .comment_reply {
@@ -348,4 +350,8 @@
     text-align: center;
     width: 12%;
     height: 30px;
+}
+
+.reply_page .card_contents .comment_list_view:last-child {
+    margin-bottom: 41px;
 }
