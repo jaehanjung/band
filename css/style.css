@@ -4,17 +4,17 @@
     background-color: #fff;
     -webkit-box-shadow: 0 1px 1px 0 #e5e8ec;
     box-shadow: 0 1px 1px 0 #e5e8ec;
+    height: 100%;
 }
 
 .card_box .card_contents {
-    margin-bottom: 11px;
+    /* margin-bottom: 11px; */
     position: relative;
     background-color: #fff;
 }
 
 .card_box .postwriter {
     position: relative;
-    height: 65px;
     background-color: transparent;
     z-index: 11;
     cursor: pointer;
@@ -65,7 +65,7 @@
     z-index: 12;
     display: block;
     position: relative;
-    vertical-align: top;
+    /* vertical-align: top; */
     margin-right: 10px;
 }
 
@@ -90,16 +90,25 @@
 
 .card_box .postWriterinfoWrap {
     display: block;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 396px;
-    -ms-flex: 1 1 396px;
-    flex: 1 1 396px;
     position: relative;
     min-width: 0;
-    white-space: nowrap;
     color: #999;
-    line-height: 1.4;
     z-index: 12;
+    width: 98%;
+}
+
+.card_box .postWriterinfoWrap .title {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #333;
+    width: 100%;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .card_box .postWriterinfoWrap .name {
@@ -198,6 +207,8 @@
     position: relative;
     text-align: left;
     background: #fcfcfc;
+    /* height: 540px; */
+    /* overflow: hidden; */
 }
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box {
@@ -206,6 +217,22 @@
     display: flex;
     max-width: 100%;
     text-align: left;
+    flex-direction: column;
+}
+
+.card_box .comment_list_box .comment_list_view .comment_list_contents_box .comment_reply {
+    display: flex;
+    flex-direction: row;
+}
+
+.card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box .comment_reply {
+    background: url(/img/ico_comm_re2.gif) 0 4px no-repeat;
+    padding-left: 11px;
 }
 
 .card_box .comment_list_box .comment_list_view .profile {
@@ -248,7 +275,51 @@
     margin-top: 3px;
     display: inline-block;
     line-height: 15px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
     color: #777;
+}
+
+.card_box .comment_list_box .comment_list_view .postWriterinfoWrap .comment_list_content .reply_btn {
+    position: relative;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-left: 14px;
+    display: inline-block;
+    line-height: 15px;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #777;
+}
+
+/* 답글쓰기 페이지 영역 */
+.reply_page {
+    min-height: 100vh;
+}
+
+.reply_page .card_contents {
+    min-height: 100vh;
+}
+
+.reply_page .card_contents .comment_list_box {
+    min-height: 100vh;
+}
+
+.reply_page .comment_list_box .reply_page_title {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.reply_page .comment_list_box .reply_input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.reply_page .comment_list_box .reply_input .cminput {
+    width: 100%;
+    padding: 10px;
 }

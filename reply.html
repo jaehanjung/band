@@ -14,47 +14,14 @@
 <body>
     <div id="wrap">
         <div class="container">
-            <div class="card_box">
+            <div class="card_box reply_page">
                 <div class="card_contents">
-                    <div>
-                        <div class="post_authorregion">
-                            <div class="postwriter">
-                                <div class="post_func">
-                                    <button type="button" class="post_set _btnPostMore gIcon icon-more"></button>
-                                </div>
-                                <div class="postWriterinfoWrap ellipsis">
-                                    <strong class="title ellipsis">아이폰 충성도 최저 x 사용자 안드로이드로</strong>
-                                    <div class="postListinfoWrap">
-                                        <time class="time">2019년 3월 13일 오전 10:08</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="postmain">
-                            <div class="postbody">
-                                <div>
-                                    <div class="postTextview">
-                                        <div class="post_contents" tabindex="-1">
-                                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste fugit minus doloremque. Fugiat, tempore? Fuga dolore, quae error quidem debitis sequi optio doloribus totam corrupti dolores dolorum, quibusdam nemo.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- 댓글영역 -->
                     <div class="comment_list_box">
-                        <div class="post_comment_count">
-                            <div class="post_comment_btn_box">
-                                <button type="button" class="post_comment_btn">댓글
-                                    <span class="count">1</span>
-                                </button>
-                                <span class="comment_arrow">
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                            </div>
+                        <div class="reply_page_title">
+                            답글쓰기
                         </div>
-                        <div class="comment_list_view" style="display:none;">
+                        <div class="comment_list_view">
                             <div class="comment_list_contents_box">
                                 <div class="comment_reply">
                                     <a href="#" class="profile">
@@ -69,7 +36,6 @@
                                         <div class="comment_list_content">
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, tenetur nam amet repellendus accusantium perferendis quo quae illum velit eligendi veritatis adipisci similique consequatur harum eum architecto quasi in.</p>
                                             <time class="time">2019년 3월 13일 오전 10:08</time>
-                                            <span class="reply_btn">답글쓰기</span>
                                         </div>
                                     </div>
                                 </div>
@@ -88,13 +54,30 @@
                                                 <div class="comment_list_content">
                                                     <p>nsequatur harum eum architecto quasi in.</p>
                                                     <time class="time">2019년 3월 13일 오전 10:08</time>
-                                                    <span class="reply_btn">답글쓰기</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="reply_input">
+                            <table cellspacing="0" class="cminput">
+                                <tbody>
+                                    <tr>
+                                        <td class="i2">
+                                            <div class="comm_write_wrap border-sub skin-bgcolor">
+                                               <input class="id_input" name="uid" type="text" placeholder="아이디">
+                                            </div>  
+                                        </td>
+                                        <td class="i3">
+                                            <div class="u_cbox_btn_upload _submitBtn">
+                                                <a href="#" class="u_cbox_txt_upload _submitCmtRef" alt="답글입력" name="">등록</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -120,8 +103,6 @@
             }
         });
     </script>
-
-
 </body>
 
 </html>
