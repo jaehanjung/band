@@ -226,7 +226,7 @@
     flex-direction: row;
 }
 
-.card_box .comment_list_box .comment_list_view .reply:last-child {
+.card_box.reply_page .comment_list_box .comment_list_view .reply:last-child {
     padding-bottom: 31px;
 }
 
