@@ -58,12 +58,15 @@
                         <div class="comment_list_view">
                             <div class="comment_list_contents_box">
                                 <div class="section_comment_btn">
-                                    <a href="reply.html" class="write">
+                                    <div class="write clearfix">
                                         <span class="thumb">
                                             <img src="/img/cafe_profile_77.png" alt="프로필사진" width="34" height="34">
                                         </span>
-                                        <span class="content">첫 댓글을 남겨보세요</span>
-                                    </a>
+                                        <div class="clearfix textarea_content">
+                                            <textarea class="content" placeholder="첫 댓글을 남겨보세요."></textarea>
+                                        </div>
+                                        <input type="button" class="write_submit" value="보내기" onclick="javascript:goPage('/index.html');">
+                                    </div>
                                 </div>
                             </div>
                         </div>
