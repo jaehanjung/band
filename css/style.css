@@ -336,7 +336,7 @@
 }
 
 .reply_page .reply_input input {
-    width: 88%;
+    width: 85%;
     font-size: 1.4em;
     border: none;
 }
@@ -360,7 +360,7 @@
 .card_box .comment_list_box .section_comment_btn {
     display: block;
     position: relative;
-    margin: 0 15px;
+    /* margin: 0 15px; */
     background-color: #fff;
 }
 
