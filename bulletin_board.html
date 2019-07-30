@@ -14,13 +14,47 @@
 <body>
     <div id="wrap">
         <div class="container">
-            <div class="card_box reply_page">
+            <div class="card_box">
                 <div class="card_contents">
+                    <div>
+                        <div class="post_authorregion">
+                            <div class="postwriter">
+                                <div class="post_func">
+                                    <button type="button" class="post_set _btnPostMore gIcon icon-more"></button>
+                                </div>
+                                <div class="postWriterinfoWrap ellipsis">
+                                    <strong class="title ellipsis">새우소금구이</strong>
+                                    <div class="postListinfoWrap">
+                                        <time class="time">2019년 3월 13일 오전 10:08</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="postmain">
+                            <div class="postbody">
+                                <div>
+                                    <div class="postTextview">
+                                        <div class="post_contents" tabindex="-1">
+                                            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste fugit minus doloremque. Fugiat, tempore? Fuga dolore, quae error quidem debitis sequi optio doloribus totam corrupti dolores dolorum, quibusdam nemo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 댓글영역 -->
                     <div class="comment_list_box">
-                        <div class="reply_page_title">
-                            답글쓰기
+                        <div class="post_comment_count">
+                            <div class="post_comment_btn_box">
+                                <button type="button" class="post_comment_btn">댓글
+                                    <span class="count">1</span>
+                                </button>
+                                <span class="comment_arrow">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </div>
                         </div>
+                        <!-- 댓글 추가 -->
                         <div class="comment_list_view">
                             <div class="comment_list_contents_box">
                                 <div class="comment_reply">
@@ -36,9 +70,11 @@
                                         <div class="comment_list_content">
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, tenetur nam amet repellendus accusantium perferendis quo quae illum velit eligendi veritatis adipisci similique consequatur harum eum architecto quasi in.</p>
                                             <time class="time">2019년 3월 13일 오전 10:08</time>
+                                            <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 댓글아래 댓글추가 -->
                                 <div class="reply">
                                     <div class="comment_list_contents_box">
                                         <div class="comment_reply">
@@ -54,46 +90,7 @@
                                                 <div class="comment_list_content">
                                                     <p>nsequatur harum eum architecto quasi in.</p>
                                                     <time class="time">2019년 3월 13일 오전 10:08</time>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="reply">
-                                    <div class="comment_list_contents_box">
-                                        <div class="comment_reply">
-                                            <a href="#" class="profile">
-                                                <span class="profileinner">
-                                                    <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
-                                                </span>
-                                            </a>
-                                            <div class="postWriterinfoWrap">
-                                                <span class="ellipsis">
-                                                    <strong class="name">정재한</strong>
-                                                </span>
-                                                <div class="comment_list_content">
-                                                    <p>nsequatur harum eum architecto quasi in.</p>
-                                                    <time class="time">2019년 3월 13일 오전 10:08</time>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="reply">
-                                    <div class="comment_list_contents_box">
-                                        <div class="comment_reply">
-                                            <a href="#" class="profile">
-                                                <span class="profileinner">
-                                                    <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
-                                                </span>
-                                            </a>
-                                            <div class="postWriterinfoWrap">
-                                                <span class="ellipsis">
-                                                    <strong class="name">정재한</strong>
-                                                </span>
-                                                <div class="comment_list_content">
-                                                    <p>nsequatur harum eum architecto quasi in.</p>
-                                                    <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,7 +98,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="comment_list_view">
+                        <!-- 댓글 추가 -->
+                        <div class="comment_list_view" style="display:none;">
                             <div class="comment_list_contents_box">
                                 <div class="comment_reply">
                                     <a href="#" class="profile">
@@ -116,9 +114,11 @@
                                         <div class="comment_list_content">
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, tenetur nam amet repellendus accusantium perferendis quo quae illum velit eligendi veritatis adipisci similique consequatur harum eum architecto quasi in.</p>
                                             <time class="time">2019년 3월 13일 오전 10:08</time>
+                                            <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 댓글아래 댓글추가 -->
                                 <div class="reply">
                                     <div class="comment_list_contents_box">
                                         <div class="comment_reply">
@@ -134,11 +134,13 @@
                                                 <div class="comment_list_content">
                                                     <p>nsequatur harum eum architecto quasi in.</p>
                                                     <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 댓글아래 댓글추가 -->
                                 <div class="reply">
                                     <div class="comment_list_contents_box">
                                         <div class="comment_reply">
@@ -154,11 +156,35 @@
                                                 <div class="comment_list_content">
                                                     <p>nsequatur harum eum architecto quasi in.</p>
                                                     <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <!-- 댓글 추가 -->
+                        <div class="comment_list_view" style="display:none;">
+                            <div class="comment_list_contents_box">
+                                <div class="comment_reply">
+                                    <a href="#" class="profile">
+                                        <span class="profileinner">
+                                            <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
+                                        </span>
+                                    </a>
+                                    <div class="postWriterinfoWrap">
+                                        <span class="ellipsis">
+                                            <strong class="name">정재한</strong>
+                                        </span>
+                                        <div class="comment_list_content">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, tenetur nam amet repellendus accusantium perferendis quo quae illum velit eligendi veritatis adipisci similique consequatur harum eum architecto quasi in.</p>
+                                            <time class="time">2019년 3월 13일 오전 10:08</time>
+                                            <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 댓글아래 댓글추가 -->
                                 <div class="reply">
                                     <div class="comment_list_contents_box">
                                         <div class="comment_reply">
@@ -174,6 +200,95 @@
                                                 <div class="comment_list_content">
                                                     <p>nsequatur harum eum architecto quasi in.</p>
                                                     <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 댓글아래 댓글추가 -->
+                                <div class="reply">
+                                    <div class="comment_list_contents_box">
+                                        <div class="comment_reply">
+                                            <a href="#" class="profile">
+                                                <span class="profileinner">
+                                                    <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
+                                                </span>
+                                            </a>
+                                            <div class="postWriterinfoWrap">
+                                                <span class="ellipsis">
+                                                    <strong class="name">정재한</strong>
+                                                </span>
+                                                <div class="comment_list_content">
+                                                    <p>nsequatur harum eum architecto quasi in.</p>
+                                                    <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 댓글 추가 -->
+                        <div class="comment_list_view" style="display:none;">
+                            <div class="comment_list_contents_box">
+                                <div class="comment_reply">
+                                    <a href="#" class="profile">
+                                        <span class="profileinner">
+                                            <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
+                                        </span>
+                                    </a>
+                                    <div class="postWriterinfoWrap">
+                                        <span class="ellipsis">
+                                            <strong class="name">정재한</strong>
+                                        </span>
+                                        <div class="comment_list_content">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt, tenetur nam amet repellendus accusantium perferendis quo quae illum velit eligendi veritatis adipisci similique consequatur harum eum architecto quasi in.</p>
+                                            <time class="time">2019년 3월 13일 오전 10:08</time>
+                                            <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 댓글아래 댓글추가 -->
+                                <div class="reply">
+                                    <div class="comment_list_contents_box">
+                                        <div class="comment_reply">
+                                            <a href="#" class="profile">
+                                                <span class="profileinner">
+                                                    <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
+                                                </span>
+                                            </a>
+                                            <div class="postWriterinfoWrap">
+                                                <span class="ellipsis">
+                                                    <strong class="name">정재한</strong>
+                                                </span>
+                                                <div class="comment_list_content">
+                                                    <p>nsequatur harum eum architecto quasi in.</p>
+                                                    <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 댓글아래 댓글추가 -->
+                                <div class="reply">
+                                    <div class="comment_list_contents_box">
+                                        <div class="comment_reply">
+                                            <a href="#" class="profile">
+                                                <span class="profileinner">
+                                                    <img src="https://coresos-phinf.pstatic.net/a/2ij3i2/0_jhjUd018svc19rz33f0o943l_sh9iw2.jpg?type=s75" class="_image" width="40" height="40" alt="정재한">
+                                                </span>
+                                            </a>
+                                            <div class="postWriterinfoWrap">
+                                                <span class="ellipsis">
+                                                    <strong class="name">정재한</strong>
+                                                </span>
+                                                <div class="comment_list_content">
+                                                    <p>nsequatur harum eum architecto quasi in.</p>
+                                                    <time class="time">2019년 3월 13일 오전 10:08</time>
+                                                    <span class="reply_btn" onclick="javascript:goPage('/reply.html');">답글쓰기</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,7 +322,7 @@
             window.location.href = url;
         }
         //접기/펼치기
-        $(".comment_arrow").click(function () {
+        $(".post_comment_btn_box").click(function () {
             // $(".comment_list_view").slideToggle();
             $('.comment_list_view').toggleClass('m_block');
             $(".comment_arrow").toggleClass("open");
@@ -220,6 +335,8 @@
             }
         });
     </script>
+
+
 </body>
 
 </html>
