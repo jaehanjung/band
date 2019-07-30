@@ -355,3 +355,51 @@
 .reply_page .card_contents .comment_list_view:last-child {
     margin-bottom: 41px;
 }
+
+/* 댓글 없을때 보여질 화면 영역*/
+.card_box .comment_list_box .section_comment_btn {
+    display: block;
+    position: relative;
+    margin: 0 15px;
+    background-color: #fff;
+}
+
+.card_box .comment_list_box .section_comment_btn .write {
+    clear: both;
+    display: block;
+    height: 34px;
+    font-size: 15px;
+    color: #999;
+}
+
+.card_box .comment_list_box .section_comment_btn .write .thumb {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+
+.card_box .comment_list_box .section_comment_btn .write .thumb::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    opacity: .1;
+}
+
+.card_box .comment_list_box .section_comment_btn .write .thumb img {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+}
+
+.card_box .comment_list_box .section_comment_btn .write .content {
+    line-height: 32px;
+    vertical-align: top;
+}
