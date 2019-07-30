@@ -506,16 +506,16 @@
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 15px 10px;
     background-color: #ff6767;
     max-width: 640px;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 /* 게시판 영역 댓글 영역 */
-.comment_list_view {
+.Register_comments {
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -525,7 +525,7 @@
     z-index: 100;
 }
 
-.comment_list_view .comment_list_contents_box {
+.Register_comments .Register_comments_box {
     border-top: 1px solid #f0f0f0;
     padding: 10px 10px 10px 10px;
     display: flex;
@@ -534,19 +534,19 @@
     flex-direction: column;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn {
+.Register_comments .Register_comments_box .section_comment_btn {
     display: block;
     position: relative;
     background-color: #fff;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write {
+.Register_comments .Register_comments_box .section_comment_btn .write {
     clear: both;
     display: block;
     color: #999;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .thumb {
+.Register_comments .Register_comments_box .section_comment_btn .write .thumb {
     position: relative;
     float: left;
     width: 34px;
@@ -555,7 +555,7 @@
     vertical-align: top;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .thumb::after {
+.Register_comments .Register_comments_box .section_comment_btn .write .thumb::after {
     content: '';
     display: block;
     position: absolute;
@@ -568,18 +568,18 @@
     opacity: .1;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .thumb img {
+.Register_comments .Register_comments_box .section_comment_btn .write .thumb img {
     width: 34px;
     height: 34px;
     border-radius: 100%;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .textarea_content {
+.Register_comments .Register_comments_box .section_comment_btn .write .textarea_content {
     margin: 0 44px 0 40px;
     position: relative;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .textarea_content .content {
+.Register_comments .Register_comments_box .section_comment_btn .write .textarea_content .content {
     overflow: hidden;
     height: 34px;
     width: 100%;
@@ -591,7 +591,7 @@
     border-radius: 20px;
 }
 
-.comment_list_view .comment_list_contents_box .section_comment_btn .write .write_submit {
+.Register_comments .Register_comments_box .section_comment_btn .write .write_submit {
     position: absolute;
     top: 0px;
     right: 0px;
