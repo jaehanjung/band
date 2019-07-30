@@ -189,9 +189,8 @@
 .card_box .post_comment_count .post_comment_btn_box .post_comment_btn .count {
     display: inline-block;
     margin-left: 3px;
-    font-size: 1.2em;
-    vertical-align: top;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: 400;
 }
 
 .card_box .post_comment_count .post_comment_btn_box .comment_arrow {
