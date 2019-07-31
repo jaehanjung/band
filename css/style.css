@@ -196,8 +196,8 @@
 .card_box .post_comment_count .post_comment_btn_box .comment_arrow {
     font-size: 1.2em;
     display: inline-block;
-    height: 16px;
-    line-height: 15px;
+    height: 20px;
+    line-height: 20px;
     padding: 0px 4px;
     vertical-align: middle;
 }
