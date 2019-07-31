@@ -649,7 +649,7 @@
 .hidden_page .subject ul li a {
     display: block;
     text-align: center;
-    padding: 5px;
+    padding: 5px 10px;
     color: #000;
     font-size: 1.3em;
 }
