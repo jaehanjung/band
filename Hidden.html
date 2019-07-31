@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="hidden_page">
+                <div class="hidden_page_menu">
+                    <div class="subject" style="-ms-overflow-style: none; ">
+                        <ul>
+                            <li>
+                                <a class="select" href="">경기도</a>
+                            </li>
+                            <li>
+                                <a class="" href="">서울특별시</a>
+                            </li>
+                            <li>
+                                <a class="" href="">강원도</a>
+                            </li>
+                            <li>
+                                <a class="" href="">대전광역시</a>
+                            </li>
+                            <li>
+                                <a class="" href="">경상남도</a>
+                            </li>
+                            <li>
+                                <a class="" href="">부산</a>
+                            </li>
+                            <li>
+                                <a class="" href="">제주도</a>
+                            </li>
+                            <li>
+                                <a class="" href="">강원도</a>
+                            </li>
+                            <li>
+                                <a class="" href="">대전광역시</a>
+                            </li>
+                            <li>
+                                <a class="" href="">경상남도</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden_img_box">
+                    <div class="banner">
+                        <ul>
+                            <li>
+                                <img src="/img/hidden.gif" alt="">
+                            </li>
+                            <li>
+                                <img src="/img/hidden.gif" alt="">
+                            </li>
+                            <li>
+                                <img src="/img/hidden.gif" alt="">
+                            </li>
+                            <li>
+                                <img src="/img/hidden.gif" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        goPage = function (url) {
+            window.location.href = url;
+        }
+        //접기/펼치기
+        $(".post_comment_btn_box").click(function () {
+            // $(".comment_list_view").slideToggle();
+            $('.comment_list_view').toggleClass('m_block');
+            $(".comment_arrow").toggleClass("open");
+            if ($(".comment_arrow").hasClass("open")) {
+                //open이 있을 때
+                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-up");
+            } else {
+                //open이 없을 때
+                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-down");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
