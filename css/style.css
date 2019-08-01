@@ -168,9 +168,15 @@
 }
 
 /* 댓글영역 */
+.card_box .comment_list_box {
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+}
+
 .card_box .post_comment_count {
     overflow: hidden;
     padding: 10px;
+    background: #f6f7f8;
 }
 
 .card_box .post_comment_count .post_comment_btn_box {
@@ -186,7 +192,6 @@
     font-size: 1.2em;
     font-weight: 400;
     color: #333;
-    background-color: #fff;
     border: none;
 }
 
@@ -219,6 +224,10 @@
     text-align: left;
     flex-direction: column;
     /* padding-bottom: 60px; */
+}
+
+.card_box .comment_list_box .comment_list_view .comment_list_contents_box:first {
+    border-top: none;
 }
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box .comment_reply {
