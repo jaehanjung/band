@@ -217,7 +217,7 @@
 }
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box {
-    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
     padding: 10px 10px 10px 10px;
     display: flex;
     max-width: 100%;
@@ -226,9 +226,7 @@
     /* padding-bottom: 60px; */
 }
 
-.card_box .comment_list_box .comment_list_view .comment_list_contents_box:first {
-    border-top: none;
-}
+
 
 .card_box .comment_list_box .comment_list_view .comment_list_contents_box .comment_reply {
     display: flex;
@@ -240,6 +238,7 @@
 .card_box .comment_list_box .comment_list_view .reply .comment_list_contents_box {
     padding: 10px 10px 0px 10px;
     margin-top: 10px;
+    border: none;
 }
 
 .card_box.reply_page .comment_list_box .comment_list_view .reply .comment_list_contents_box {
