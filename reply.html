@@ -199,6 +199,11 @@
                     </div>
                 </div>
             </div>
+            <div class="scrolltop">
+                <a href="#" class="top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
         </div>
     </div>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
@@ -207,17 +212,32 @@
             window.location.href = url;
         }
         //접기/펼치기
-        $(".comment_arrow").click(function () {
-            // $(".comment_list_view").slideToggle();
-            $('.comment_list_view').toggleClass('m_block');
-            $(".comment_arrow").toggleClass("open");
-            if ($(".comment_arrow").hasClass("open")) {
-                //open이 있을 때
-                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-up");
-            } else {
-                //open이 없을 때
-                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-down");
-            }
+        // $(".comment_arrow").click(function () {
+        //     // $(".comment_list_view").slideToggle();
+        //     $('.comment_list_view').toggleClass('m_block');
+        //     $(".comment_arrow").toggleClass("open");
+        //     if ($(".comment_arrow").hasClass("open")) {
+        //         //open이 있을 때
+        //         $(".comment_arrow").find(">i").attr("class", "fa fa-angle-up");
+        //     } else {
+        //         //open이 없을 때
+        //         $(".comment_arrow").find(">i").attr("class", "fa fa-angle-down");
+        //     }
+        // });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scrolltop').fadeIn();
+                } else {
+                    $('.scrolltop').fadeOut();
+                }
+            });
+            $('.scrolltop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
         });
     </script>
 </body>

@@ -76,20 +76,33 @@
                     <div class="banner">
                         <ul>
                             <li>
-                                <img src="/img/hidden.gif" alt="">
+                                <a href="#">
+                                    <img src="/img/hidden.gif" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/img/hidden.gif" alt="">
+                                <a href="#">
+                                    <img src="/img/hidden.gif" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/img/hidden.gif" alt="">
+                                <a href="#">
+                                    <img src="/img/hidden.gif" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/img/hidden.gif" alt="">
+                                <a href="#">
+                                    <img src="/img/hidden.gif" alt="">
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="scrolltop">
+                <a href="#" class="top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -98,18 +111,20 @@
         goPage = function (url) {
             window.location.href = url;
         }
-        //접기/펼치기
-        $(".post_comment_btn_box").click(function () {
-            // $(".comment_list_view").slideToggle();
-            $('.comment_list_view').toggleClass('m_block');
-            $(".comment_arrow").toggleClass("open");
-            if ($(".comment_arrow").hasClass("open")) {
-                //open이 있을 때
-                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-up");
-            } else {
-                //open이 없을 때
-                $(".comment_arrow").find(">i").attr("class", "fa fa-angle-down");
-            }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scrolltop').fadeIn();
+                } else {
+                    $('.scrolltop').fadeOut();
+                }
+            });
+            $('.scrolltop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
         });
     </script>
 

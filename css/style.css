@@ -677,7 +677,29 @@
     margin: 10px 0px;
 }
 
+.hidden_page .hidden_img_box ul li a {
+    display: block;
+}
+
 .hidden_page .hidden_img_box ul li img {
     width: 100%;
     max-width: 100%;
+}
+
+/* 스크롤 탑 영역 */
+.scrolltop {
+    position: fixed;
+    right: 20px;
+    bottom: 64px;
+    display: none;
+    color: #fff;
+    z-index: 100;
+    border: 3px solid #9a9a9a;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.scrolltop .fa-chevron-up {
+    font-size: 1.4em;
+    color: #9a9a9a;
 }

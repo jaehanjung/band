@@ -314,6 +314,11 @@
                     </div>
                 </div>
             </div>
+            <div class="scrolltop">
+                <a href="#" class="top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
         </div>
     </div>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
@@ -334,6 +339,21 @@
         //         $(".comment_arrow").find(">i").attr("class", "fa fa-angle-down");
         //     }
         // });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrolltop').fadeIn();
+                } else {
+                    $('.scrolltop').fadeOut();
+                }
+            });
+            $('.scrolltop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
     </script>
 
 
