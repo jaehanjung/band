@@ -162,6 +162,11 @@
     line-height: 1.43;
 }
 
+.card_box .postmain img {
+    width: 100%;
+    max-width: 100%;
+}
+
 /* 댓글영역 */
 .card_box .post_comment_count {
     overflow: hidden;
@@ -702,4 +707,81 @@
 .scrolltop .fa-chevron-up {
     font-size: 1.4em;
     color: #9a9a9a;
+}
+
+/* 모달창 영역 */
+.modal_viw {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.4);
+    zoom: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.all_modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.all_modal .report_btn {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 1005;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.all_modal .report {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    z-index: 1005;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    font-weight: bold;
+}
+
+.all_modal .report p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.all_modal .report span {
+    font-size: 1.3em;
+}
+
+.all_modal .report .report_btn_box {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.all_modal .report .report_btn_box button {
+    background-color: #fff;
+    border: none;
+    color: #E95468;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.all_modal .report .report_btn_box .Check {
+    margin-left: 10px;
 }

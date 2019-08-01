@@ -14,6 +14,24 @@
 <body>
     <div id="wrap">
         <div class="container">
+            <div class="modal_viw disable"></div>
+            <div class="all_modal disable">
+                <div class="report_btn">
+                    <span>삭제하기</span>
+                </div>
+                <div class="report disable">
+                    <p>삭제하기</p>
+                    <span>히든방 게시글을 삭제하시겟습니까?</span>
+                    <div class="report_btn_box">
+                        <button class="Cancellation">
+                            취소
+                        </button>
+                        <button class="Check">
+                            확인
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="card_box">
                 <div class="card_contents">
                     <div>
@@ -353,6 +371,47 @@
                 }, 400);
                 return false;
             });
+        });
+        // 푸드톡 기타창 신고하기 모달창 영역
+        $('.post_func').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.modal_viw').removeClass('disable');
+            $('.all_modal').removeClass('disable');
+        });
+        // 모달창 바탕 클릭시 삭제되는 영역
+        $('.modal_viw').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 취소버튼 클릭시 닫히는 영역
+        $('.Cancellation').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 확인버튼 클릭시 닫히는 영역
+        $('.Check').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.all_modal').addClass('disable');
+            $('.modal_viw').addClass('disable');
+            $('.report').addClass('disable');
+            $('.report_btn').removeClass('disable');
+        });
+        // 신고하기 버튼 클릭시
+        $('.report_btn').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            $('.report_btn').addClass('disable');
+            $('.report').removeClass('disable');
         });
     </script>
 
