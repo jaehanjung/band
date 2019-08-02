@@ -515,7 +515,7 @@
     width: 100%;
     text-align: center;
     padding: 15px 10px;
-    background-color: #ff6767;
+    background-color: #F43142;
     max-width: 640px;
     color: #fff;
     font-weight: bold;
@@ -862,8 +862,8 @@
 
 .sign_up_page .phone_contents .personal_identification .identification {
     padding: 5px;
-    background-color: #ff6767;
-    border: 1px solid #ff6767;
+    background-color: #F43142;
+    border: 1px solid #F43142;
     color: #fff;
     font-size: 1.3em;
 }
@@ -913,7 +913,7 @@
     width: 100%;
     font-size: 1.4em;
     font-weight: bold;
-    background-color: #ff6767;
+    background-color: #F43142;
     color: #fff;
     padding: 15px 10px;
 }
