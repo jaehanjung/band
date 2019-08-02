@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="find_id">
+                <div class="group">
+                    <div class="title">
+                        <p>아이디 찾기</p>
+                    </div>
+                    <div class="contents">
+                        <p class="sub_title">회원정보에 등록한 휴대전화로 인증</p>
+                        <div class="phone_find_box">
+                            <p class="sub_content">회원정보에 등록한 휴대전화 번호와 입력한 휴대전화 번호가 같아야, 인증번호를 받을 수 있습니다.</p>
+                            <div class="input_box">
+                                <input type="text" id="phoneNm" class="phoneNm" name="phoneNm" maxlength="40" placeholder="이름">
+                            </div>
+                            <div class="input_box">
+                                <input id="phone" name="phone" class="phone_number" type="tel" pattern="[0-9]*" maxlength="10">
+                            </div>
+                            <span class="row">
+                                <span class="cell" style="width:27%">
+                                    <span class="input_wrap b_tp1">
+                                        <span class="inner country_code">
+                                            <span class="sel_value" id="input_internationalCode">+82</span>
+                                            <select id="internationalCode" name="internationalCode" title="국가번호" class="country_sel" onchange="javascript:setInternationalCode('internationalCode','input_internationalCode','');">
+                                                <!--<select id="nationNo" title="휴대폰번호 앞자리" class="sel country_sel">-->
+                                                <option value="82">대한민국 +82</option>
+                                            </select>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="cell term"></span>
+                                <span class="cell">
+                                    <span class="input_wrap b_tp1">
+                                        <span class="inner"><label class="u_vc" for="phoneNo">휴대폰 번호 입력</label><input type="text" id="phoneNo" name="phoneNo" onkeydown="check_num('phoneNo', '1')" placeholder="휴대폰 번호"><button type="button" id="btn_phoneNo" class="btn_canl" style="display:none">입력 내용 삭제</button></span>
+                                    </span>
+                                </span>
+                                <span class="cell term"></span>
+                                <span class="cell" style="width:20%;padding-right:2px">
+                                    <a href="#" id="btnPhoneAuthNo" name="btnPhoneAuthNo" onclick="sendAuthNoForPhoneAuth();nclk(this,'rmp.code','','',event);" class="btn_tp2"><span>인증</span></a>
+                                </span>
+                            </span>
+                            <span class="row">
+                                <span class="cell">
+                                    <span id="span_phoneAuthNo" style="display:none"></span>
+                                    <span class="input_wrap b_tp1">
+                                        <span class="inner">
+                                            <label class="u_vc" for="phoneAuthNo">인증번호 숫자 6자리 입력</label>
+                                            <input type="tel" id="phoneAuthNo" name="phoneAuthNo" maxlength="6" placeholder="인증번호 숫자 6자리" onkeydown="check_num('phoneAuthNo', '1')" disabled="">
+                                            <button type="button" id="btn_phoneAuthNo" class="btn_canl" style="display:none">입력 내용 삭제</button>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                            <p class="help">인증번호가 오지 않나요? <a href="javascript:showHelp('smsHelpTxt');" onclick="nclk(this,'rmp.help','','',event);" class="ico_help">도움말</a>
+                            </p>
+                            <div id="smsHelpTxt" class="ly_help_w" style="display:none">
+                                <div class="ly_help">
+                                    <p>1588 번호가 스팸 문자로 등록되어 있는 <br>것은 아닌지 확인해 주세요. <br>스팸 문자로 등록되어 있지 않다면, <br>다시 한 번 '인증'을 눌러주세요.</p>
+                                    <a href="javascript:hiddenObj('smsHelpTxt');" onclick="nclk(this,'rmp.helpx','','',event);"><span class="u_vc">닫기</span></a>
+                                </div>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        goPage = function (url) {
+            window.location.href = url;
+        }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scrolltop').fadeIn();
+                } else {
+                    $('.scrolltop').fadeOut();
+                }
+            });
+            $('.scrolltop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
