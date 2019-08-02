@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="sign_up_page">
+                <form id="member_info" class="member_info">
+                    <div class="id_password_contents">
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                아이디
+                            </p>
+                            <input class="id_input" id="uid" name="uid" type="text">
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                비밀번호
+                            </p>
+                            <input type="password" id="upwd" name="upwd" maxlength="16">
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                비밀번호 확인
+                            </p>
+                            <input type="password" id="rpwd" name="rpwd" maxlength="16">
+                        </div>
+                    </div>
+                    <div class="nickname_email_contents">
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                닉네임
+                            </p>
+                            <input type="text" class="nickname" id="nickname" name="nickname" placeholder="한글,영문,숫자만 가능">
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                이메일
+                            </p>
+                            <input type="text" id="email" name="email" placeholder="이메일">
+                        </div>
+                    </div>
+                    <div class="phone_contents">
+                        <div class="personal_identification">
+                            <button type="button" class="identification">휴대폰 본인확인</button>
+                            <div class="placeholder">
+                                성함과 휴대폰 번호 자동입력 수정불가
+                            </div>
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                성함
+                            </p>
+                            <input type="text" id="uname" name="uname">
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                휴대폰 번호
+                            </p>
+                            <input id="phone" name="phone" class="phone_input" type="tel" pattern="[0-9]*" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="membericon_idcard_contents">
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                회원 아이콘
+                            </p>
+                            <div class="file_upload">
+                                <button type="button" class="file_upload_btn">파일 업로드</button>
+                            </div>
+                        </div>
+                        <div class="member_info_box">
+                            <p class="left_title">
+                                신분증
+                            </p>
+                            <div class="file_upload">
+                                <button type="button" class="file_upload_btn">파일 업로드</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_confirm">
+                        <input type="submit" value="작성완료" id="btn_submit" class="btn_submit">
+                    </div>
+                </form>
+            </div>
+            <div class="scrolltop">
+                <a href="#" class="top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        goPage = function (url) {
+            window.location.href = url;
+        }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scrolltop').fadeIn();
+                } else {
+                    $('.scrolltop').fadeOut();
+                }
+            });
+            $('.scrolltop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

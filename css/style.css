@@ -794,3 +794,126 @@
 .all_modal .report .report_btn_box .Check {
     margin-left: 10px;
 }
+
+
+/* 회원가입 페이지 영역 */
+.sign_up_page {
+    padding: 10px;
+    position: relative;
+}
+
+.sign_up_page .member_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_up_page .member_info .id_password_contents {
+    margin-bottom: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.sign_up_page .member_info .left_title {
+    width: 30%;
+    text-align: left;
+    background-color: #fff;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.sign_up_page .member_info input {
+    width: 70%;
+    font-size: 1.3em;
+    border: none;
+    padding: 10px;
+}
+
+.sign_up_page .member_info input::placeholder {
+    color: #ccc;
+    font-size: 1.1em;
+}
+
+.sign_up_page .member_info_box {
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    line-height: 40px;
+}
+
+.sign_up_page .member_info .nickname_email_contents {
+    margin-bottom: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.sign_up_page .member_info .phone_contents {
+    margin-bottom: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.sign_up_page .phone_contents .personal_identification {
+    border: 1px solid #e0e0e0;
+    height: 40px;
+    padding: 5px 5px;
+    background-color: #fff;
+    position: relative;
+}
+
+.sign_up_page .phone_contents .personal_identification .identification {
+    padding: 5px;
+    background-color: #ff6767;
+    border: 1px solid #ff6767;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.sign_up_page .phone_contents .personal_identification .placeholder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+    left: 120px;
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+}
+
+.sign_up_page .membericon_idcard_contents {
+    margin-bottom: 5px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.sign_up_page .membericon_idcard_contents .file_upload {
+    width: 70%;
+    background-color: #fff;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.sign_up_page .membericon_idcard_contents .file_upload .file_upload_btn {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.sign_up_page .btn_confirm {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.sign_up_page .member_info .btn_submit {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #ff6767;
+    color: #fff;
+    padding: 15px 10px;
+}
