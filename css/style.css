@@ -919,13 +919,23 @@
 }
 
 /* 로그인 page 영역 */
+.login_wrap {
+    background-color: #F43142;
+}
+
+.container.login {
+    background-color: #F43142;
+    min-height: 0;
+    margin: auto;
+}
+
 .login_page {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F43142;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 
 .login_page .login_logo {
