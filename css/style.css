@@ -917,3 +917,110 @@
     color: #fff;
     padding: 15px 10px;
 }
+
+/* 로그인 page 영역 */
+.login_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.login_page .login_logo {
+    font-size: 2.4em;
+    color: #E95468;
+    text-align: center;
+}
+
+.login_page .login_form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.login_page .login_form .login_id {
+    background: url(/img/email.png) left 8px center no-repeat;
+    padding-left: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.login_page .login_form .login_pw {
+    background: url(/img/password.png) left 8px center no-repeat;
+    padding-left: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.login_page .login_form .login_options {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.login_page .login_form .login_options label {
+    font-weight: bold;
+    color: #666;
+}
+
+.login_page .login_form .login_options .forgot_password {
+    color: #4B5052;
+    text-decoration: underline;
+}
+
+.login_page .login_form .form_group {
+    margin-bottom: 15px;
+}
+
+.login_page .login_form .form_group .btn_login {
+    background-color: #E91E63;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #E91E63;
+    display: block;
+    height: 40px;
+}
+
+.signup_link {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    line-height: 0.1em;
+    margin: 30px 0 20px;
+}
+
+.signup_link span {
+    background: #fff;
+    padding: 0 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.login_page .login_form .form_group .btn_signup {
+    background-color: #06a3e9;
+    color: #fff;
+    font-size: 2em;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #06a3e9;
+    display: block;
+    height: 40px;
+}
