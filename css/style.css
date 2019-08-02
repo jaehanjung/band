@@ -1097,4 +1097,104 @@
     padding-left: 10px;
 }
 
-.find_id .group .contents .phone_find_box .input_box .phoneNm {}
+.find_id .group .contents .phone_find_box .input_box.phone_numbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.find_id .group .contents .phone_find_box .input_box .phone_number {
+    width: 79%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+.find_id .group .contents .phone_find_box .input_box .certification {
+    text-align: center;
+    color: #555;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0, rgba(239, 239, 239, 1) 100%);
+    /* padding: 6px; */
+    height: 40px;
+    width: 20%;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 1px solid rgba(239, 239, 239, 1);
+}
+
+.find_id .group .contents .phone_find_box .input_box .certification_num {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+/* 비밀번호 찾기 영역 */
+
+.find_password {
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.find_password .group {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.find_password .group .title {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.find_password .group .contents {
+    border-top: 1px solid #e7e8e8;
+    padding: 10px;
+}
+
+.find_password .group .contents .sub_title {
+    font-size: 1.3em;
+    color: #555;
+    font-weight: bold;
+}
+
+.find_password .group .contents .phone_find_box {
+    position: relative;
+}
+
+.find_password .group .contents .phone_find_box .sub_content {
+    font-size: 1.2em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.find_password .group .contents .phone_find_box .input_box {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.find_password .group .contents .phone_find_box .input_box .phoneNm {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    font-size: 1.3em;
+    padding-left: 10px;
+}
+
+.find_password .group .contents .phone_find_box .input_box .password_btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: #06a3e9;
+    color: #fff;
+    border: 1px solid #06a3e9;
+}
