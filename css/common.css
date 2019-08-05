@@ -75,7 +75,6 @@ body {
 #wrap {
     width: 100%;
     min-width: 320px;
-    max-width: 640px;
     margin: 0 auto;
     overflow: hidden;
     min-height: 100vh;
