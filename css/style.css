@@ -920,20 +920,20 @@
 
 /* 로그인 page 영역 */
 .login_wrap {
-    background-color: #F43142;
+    background-color: #fff;
 }
 
 .container.login {
-    background-color: #F43142;
+    background-color: #fff;
     min-height: 0;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .login_page {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F43142;
+    background-color: #fff;
     flex-direction: column;
     height: 100%;
 }
@@ -945,44 +945,44 @@
 }
 
 .login_page .login_form {
-    background-color: #F43142;
-    padding: 40px;
+    background-color: #fff;
+    padding: 40px 25px 0px 25px;
     border-radius: 5px;
     width: 100%;
     text-align: center;
 }
 
 .login_page .login_form .login_id {
-    background: url(/img/email.png) left 8px center no-repeat;
-    padding-left: 40px;
+    /* background: url(/img/email.png) left 8px center no-repeat; */
+    padding-left: 15px;
     display: block;
     height: 40px;
-    border-radius: 5px;
-    border: none;
+    /* border-radius: 5px; */
+    border: 1px solid #a5a5a5;
     width: 100%;
     font-size: 1.3em;
-    margin-bottom: 10px;
-    background-color: #f7858f;
-    color: #fff;
+    /* margin-bottom: 10px; */
+    background-color: #fff;
+    color: #000;
 }
 
 .login_page .login_form .login_id::placeholder,
 .login_page .login_form .login_pw::placeholder {
-    color: #fff;
+    color: #a5a5a5;
 }
 
 .login_page .login_form .login_pw {
-    background: url(/img/password.png) left 8px center no-repeat;
-    padding-left: 40px;
+    /* background: url(/img/password.png) left 8px center no-repeat; */
+    padding-left: 15px;
     display: block;
     height: 40px;
-    border-radius: 5px;
-    border: none;
+    /* border-radius: 5px; */
+    border: 1px solid #a5a5a5;
     width: 100%;
     font-size: 1.3em;
-    margin-bottom: 10px;
-    background-color: #f7858f;
-    color: #fff;
+    /* margin-bottom: 10px; */
+    background-color: #fff;
+    color: #000;
 }
 
 .login_page .login_form .login_options {
@@ -993,14 +993,64 @@
     font-size: 1.2em;
 }
 
-.login_page .login_form .login_options label {
+.login_page .login_form .login_options span {
+    color: #000;
+    position: relative;
+}
+
+.login_page .login_form .login_options span input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.login_page .login_form .login_options span label {
+    margin-left: 6px;
     font-weight: bold;
-    color: #fff;
+    font-size: 1.2em;
+}
+
+.login_page .login_form .login_options span label:before {
+    content: '';
+    width: 3px;
+    height: 8px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    left: 4px;
+    margin-top: -2px;
+    top: 50%;
+    z-index: 2;
+}
+
+.login_page .login_form .login_options span label:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    border: 1px solid #ddd;
+    transform: translateY(-50%);
+}
+
+.login_page .login_form .login_options span input:checked+label:before {
+    border-color: #fff;
+}
+
+.login_page .login_form .login_options span input:checked+label:after {
+    background-color: #F43142;
+    border: 1px solid #F43142;
+    /* 	animation: checkBounceIn .5s 0s ease-in-out; */
 }
 
 .login_page .login_form .login_options .forgot_password {
-    color: #fff;
+    color: #000;
     text-decoration: underline;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .login_page .login_form .form_group {
@@ -1008,12 +1058,13 @@
 }
 
 .login_page .login_form .form_group .btn_login {
-    background-color: #06a3e9;
+    background-color: #F43142;
     color: #fff;
-    font-size: 1.8em;
+    font-size: 1.4em;
+    font-weight: bold;
     width: 100%;
-    border-radius: 5px;
-    border: 1px solid #06a3e9;
+    /* border-radius: 5px; */
+    border: 1px solid #F43142;
     display: block;
     height: 40px;
 }
@@ -1035,14 +1086,34 @@
 }
 
 .login_page .login_form .form_group .btn_signup {
-    background-color: #06a3e9;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 1.8em;
+    font-weight: bold;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #06a3e9;
+    border: 1px solid #fff;
     display: block;
     height: 40px;
+}
+
+.login_page .login_form .form_group p {
+    color: #a5a5a5;
+    font-size: 1.3em;
+}
+
+.login_page .login_tit {
+    padding: 25px 15px 25px 15px;
+    width: 100%;
+}
+
+.login_page .login_tit div {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #a5a5a5;
+    line-height: 1.4;
+    border: 1px solid #a5a5a5;
 }
 
 /* 아이디 찾기 페이지 영역 */
@@ -1197,4 +1268,20 @@
     background-color: #06a3e9;
     color: #fff;
     border: 1px solid #06a3e9;
+}
+
+
+/* nav 영역 */
+.nav_phone {
+    transform: scale(1.2);
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+
+.nav_phone:hover {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
 }
