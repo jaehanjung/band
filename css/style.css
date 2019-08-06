@@ -956,11 +956,11 @@
     /* background: url(/img/email.png) left 8px center no-repeat; */
     padding-left: 15px;
     display: block;
-    height: 40px;
+    height: 50px;
     /* border-radius: 5px; */
     border: 1px solid #a5a5a5;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     /* margin-bottom: 10px; */
     background-color: #fff;
     color: #000;
@@ -975,11 +975,11 @@
     /* background: url(/img/password.png) left 8px center no-repeat; */
     padding-left: 15px;
     display: block;
-    height: 40px;
+    height: 50px;
     /* border-radius: 5px; */
     border: 1px solid #a5a5a5;
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.4em;
     /* margin-bottom: 10px; */
     background-color: #fff;
     color: #000;
@@ -1006,6 +1006,7 @@
     margin-left: 6px;
     font-weight: bold;
     font-size: 1.2em;
+    vertical-align: super;
 }
 
 .login_page .login_form .login_options span label:before {
@@ -1060,13 +1061,13 @@
 .login_page .login_form .form_group .btn_login {
     background-color: #F43142;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: bold;
     width: 100%;
     /* border-radius: 5px; */
     border: 1px solid #F43142;
     display: block;
-    height: 40px;
+    height: 50px;
 }
 
 .signup_link {
